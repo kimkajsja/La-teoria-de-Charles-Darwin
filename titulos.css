@@ -1,0 +1,109 @@
+/* Variables con tus colores exactos */
+:root {
+    --bg-color: #d3abae;         /* Fondo rosado de la pantalla */
+    --card-bg: #A17A5D;         /* Marrón de las tarjetas */
+    --text-color: #000000;       /* Texto oscuro */
+    --hover-bg: #81635b;         /* Marrón más oscuro para hover */
+    --border-color: #6a4f3b;      /* Borde de los botones y divisor */
+}
+
+/* Reset y estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* Estilo para envolver el contenido en una tarjeta idéntica a tu referencia */
+.tarjeta-enciclopedia {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Título estilizado como en la imagen */
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+/* Grupo de botones principales */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: block;
+    padding: 14px 20px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.25s ease;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.boton:hover {
+    background-color: var(--hover-bg);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Divisor horizontal */
+hr {
+    border: none;
+    border-top: 2px solid var(--border-color);
+    margin: 25px 0;
+}
+
+/* Botón de regresar */
+.btn-regresar {
+    display: inline-block;
+    background-color: #ffffff;
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-regresar:hover {
+    background-color: var(--hover-bg);
+    color: #ffffff;
+    border-color: var(--border-color);
+}
+
+footer {
+    background-color: #6a4f3b;
+    color: #ffffff;
+    padding: 18px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
